@@ -1,0 +1,27 @@
+.btn {
+	&.loading {
+		position: relative;
+		color: transparent;
+
+		&:before {
+			content: '';
+			display: block;
+			width: 15px;
+			height: 15px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 50%;
+			border: 2px solid rgba(255, 255, 255, 0.6);
+			border-top-color: transparent;
+			animation: loading 0.5s linear 0s infinite normal !important;
+		}
+	}
+	
+	&.btn-primary {
+		box-shadow: 0 2px 10px #5e81f452;
+		border: none;
+		background-color: #5e81f4;
+	}
+}

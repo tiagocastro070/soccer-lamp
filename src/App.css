@@ -1,38 +1,79 @@
+:root {
+	--color-main: #5E81F4;
+	--color-main2: #9696BB;
+	--color-secondary: #FF606D;
+	--color-default: #131336;
+	--color-default2: #C9CFDE;
+	--color-default3: #D5DAE5;
+	--color-default4: #F5F5FB;
+
+	--grid-gap: 35px;
+
+	--font: 'Rubik', sans-serif;
+}
+
+html, body {
+	min-height: 100%;
+	height: 100%;
+	position: relative;
+	color: var(--color-default);
+	font-family: var(--font);
+}
+
+body {
+	background-color: var(--color-default4);
+}
+
+img {
+	max-width: 100%;
+}
+
+#root {
+	height: 100%;
+	overflow: auto;
+}
+
 .App {
-  text-align: center;
+	display: grid;
+	grid-template-areas: 'menu top .'
+						 'menu body .'
+						 'menu footer .';
+	grid-template-columns: 290px auto 0;
+	grid-template-rows: 90px auto 90px;
+	grid-gap: var(--grid-gap);
+	min-height: 100%;
+	height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App__menu {
+	grid-area: menu;
+	padding: 20px;
+	border-right: 1px solid var(--color-default3);
+	background-color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App__top {
+	grid-area: top;
+	height: 90px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App__body {
+	grid-area: body;
 }
 
-.App-link {
-  color: #61dafb;
+.App__footer {
+	grid-area: footer;
+	height: 90px;
+	border-top: 1px solid var(--color-default3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-body--grad {
+	background: rgb(23,37,82);
+	background: linear-gradient(90deg, rgb(38, 57, 119) 0%, rgba(44,66,139,1) 100%);
+	color: white;
+}
+
+@keyframes loading {
+	0% { transform: translate(-50%, -50%) rotate(0); }
+	100% { transform: translate(-50%, -50%) rotate(359); }
 }
