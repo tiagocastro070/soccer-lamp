@@ -1,0 +1,98 @@
+.team-standing {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: white;
+	color: var(--color-main2);
+	font-size: 14px;
+	text-align: center;
+
+	&:hover {
+		background-color: #fafafa;
+	}
+
+	td {
+		padding: 7px 0;
+	}
+}
+
+.team-standing__position {
+	width: 40px;
+	padding-right: 10px !important;
+	padding-left: 10px !important;
+	position: relative;
+}
+
+.team-standing__position__desc {
+	display: block;
+	width: 3px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.team-standing__position__desc--onblue {
+	background-color: var(--color-main);
+}
+
+.team-standing__position__desc--ongreen {
+	background-color: #3aa757;
+}
+
+.team-standing__position__desc--onred {
+	background-color: #EA4335;
+}
+
+.team-standing__badge {
+	width: 40px;
+
+	img {
+		width: 30px;
+		max-width: 100%;
+	}
+}
+
+.team-standing__name {
+	color: var(--color-default);
+	font-weight: bold;
+	text-align: left;
+}
+
+.team-standing__numbers {
+	width: 25px;
+}
+
+.team-standing__form {
+	width: 100px;
+
+	span {
+		display: inline-block;
+		width: 5px;
+		height: 5px;
+		margin: 0 4px;
+		border-radius: 50%;
+		// color: white;
+		color: transparent;
+		font-size: 0.6em;
+		line-height: 16px;
+		vertical-align: middle;
+	}
+}
+
+.team-standing__form__victory {
+	background-color: #3aa757;
+}
+
+.team-standing__form__draw {
+	background-color: lightgray;
+}
+
+.team-standing__form__lost {
+	background-color: #EA4335;
+}
+
+.team-standing__points {
+	width: 50px;
+	padding-right: 20px;
+	color: var(--color-default);
+	font-weight: bold;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import api from '../../services/Api.js';
 import Checkbox from '../Forms/Checkbox/Checkbox';
+import TeamStanding from '../TeamStanding/TeamStanding';
 
 import './Body.scss';
 
@@ -104,48 +105,47 @@ export default function Body() {
 							<div className="col-9">
 								England
 								<h3>Premier League</h3>
-								<select name="" id="">
-									<option value="">19/20</option>
-								</select>
 							</div>
 						</div>
-						<table>
-							{/* TEAM */}
-							<tr>
-								<td>1</td>
-								<td><img src="https://media.api-football.com/teams/212.png" alt="" /> F.C. Porto</td>
-								<td>20</td>
-								<td>18</td>
-								<td>1</td>
-								<td>1</td>
-								<td>39:19</td>
-								<td>VVDVV</td>
-								<td>51</td>
-							</tr>
-							{/* TEAM */}
-							<tr>
-								<td>1</td>
-								<td><img src="https://media.api-football.com/teams/212.png" alt="" /> F.C. Porto</td>
-								<td>20</td>
-								<td>18</td>
-								<td>1</td>
-								<td>1</td>
-								<td>39:19</td>
-								<td>VVDVV</td>
-								<td>51</td>
-							</tr>
-							{/* TEAM */}
-							<tr>
-								<td>1</td>
-								<td><img src="https://media.api-football.com/teams/212.png" alt="" /> F.C. Porto</td>
-								<td>20</td>
-								<td>18</td>
-								<td>1</td>
-								<td>1</td>
-								<td>39:19</td>
-								<td>VVDVV</td>
-								<td>51</td>
-							</tr>
+						<table style={{ width: '100%', marginTop: '50px', borderCollapse: 'collapse', textAlign: 'center' }}>
+							<thead style={{ fontSize: '13px' }}>
+								<td colSpan="3" style={{ textAlign: 'left' }}>
+									<select name="" id="">
+										<option value="">19/20</option>
+										<option value="">18/19</option>
+										<option value="">17/18</option>
+									</select>
+								</td>
+								<td>P</td>
+								<td>W</td>
+								<td>D</td>
+								<td>L</td>
+								<td>Goals</td>
+								<td>Form</td>
+								<td>Points</td>
+							</thead>
+							<tbody>
+								<TeamStanding />
+								<TeamStanding />
+								<TeamStanding />
+								<TeamStanding />
+								<TeamStanding />
+								<TeamStanding />
+								<TeamStanding />
+								<TeamStanding />
+								<TeamStanding />
+								<TeamStanding />
+								<TeamStanding />
+								<TeamStanding />
+								<TeamStanding />
+								<TeamStanding />
+								<TeamStanding />
+								<TeamStanding />
+								<TeamStanding />
+								<TeamStanding />
+								<TeamStanding />
+								<TeamStanding />
+							</tbody>
 						</table>
 					</div>
 				</div>
