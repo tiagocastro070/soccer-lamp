@@ -108,7 +108,7 @@ export default function Body() {
 							</div>
 						</div>
 						<table style={{ width: '100%', marginTop: '50px', borderCollapse: 'collapse', textAlign: 'center' }}>
-							<thead style={{ fontSize: '13px' }}>
+							<thead style={{ color: '#ddd', fontSize: '13px' }}>
 								<td colSpan="3" style={{ textAlign: 'left' }}>
 									<select name="" id="">
 										<option value="">19/20</option>
