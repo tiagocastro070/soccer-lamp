@@ -1,0 +1,41 @@
+.fixture-thumb {
+	display: block;
+	padding: 10px 20px;
+	position: relative;
+	border-bottom: 1px solid var(--color-default4);
+	background-color: white;
+	color: inherit;
+	font-size: 12px;
+	text-decoration: none;
+	transition: box-shadow 0.3s ease;
+
+	&:hover {
+		z-index: 2;
+		box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+		text-decoration: none;
+	}
+
+	&--minimal {
+		padding: 5px 15px;
+		
+		.fixture-thumb__team__badge {
+			max-width: 25px;
+			margin: 0 10px;
+		}
+		.fixture-thumb__team__name { display: none; }
+	}
+}
+
+.fixture-thumb__team {
+	width: 50%;
+}
+
+.fixture-thumb__team__badge {
+	max-width: 40px;
+	margin: 0 20px;
+}
+
+.fixture-thumb__info {
+	width: 105px;
+	color: var(--color-main2);
+}
