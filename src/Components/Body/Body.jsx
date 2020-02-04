@@ -4,6 +4,8 @@ import Checkbox from '../Forms/Checkbox/Checkbox';
 import TeamStanding from '../TeamStanding/TeamStanding';
 
 import './Body.scss';
+import FixtureThumb from '../FixtureThumb/FixtureThumb.jsx';
+import EventsTimeline from '../EventsTimeline/EventsTimeline.jsx';
 
 export default function Body() {
 	return (
@@ -37,36 +39,53 @@ export default function Body() {
 							View league details 
 						</div>
 						<div className="col-7 offset-1">
-							<div className="d-flex align-items-center justify-content-between">
-								<div className="d-flex flex-column align-items-center">
-									<img src="https://media.api-football.com/teams/212.png" alt="" />
-									<b>Nome da Equipa</b>
-								</div>
-								<div className="d-flex flex-column align-items-center">
-									<span>Live *</span>
-									<span>game info</span>
-									<span>Game Stadium</span>
-								</div>
-								<div className="d-flex flex-column align-items-center">
-									<img src="https://media.api-football.com/teams/212.png" alt="" />
-									<b>Nome da Equipa</b>
-								</div>
-							</div>
-							<div className="d-flex align-items-center justify-content-between">
-								<div className="d-flex flex-column align-items-center">
-									<img src="https://media.api-football.com/teams/212.png" alt="" />
-									<b>Nome da Equipa</b>
-								</div>
-								<div className="d-flex flex-column align-items-center">
-									<span>20h45</span>
-									<span>game info</span>
-									<span>Game Stadium</span>
-								</div>
-								<div className="d-flex flex-column align-items-center">
-									<img src="https://media.api-football.com/teams/212.png" alt="" />
-									<b>Nome da Equipa</b>
-								</div>
-							</div>
+							<FixtureThumb minimal={true} />
+							<FixtureThumb />
+							<FixtureThumb />
+							<FixtureThumb />
+							<FixtureThumb />
+						</div>
+					</div>
+					<div className="row">
+						<div className="col-3">
+							<img src="https://media.api-football.com/leagues/2.png" alt=""/>
+							<br/>
+							View league details 
+						</div>
+						<div className="col-7 offset-1">
+							<FixtureThumb minimal={true} />
+							<FixtureThumb />
+							<FixtureThumb />
+							<FixtureThumb />
+							<FixtureThumb />
+						</div>
+					</div>
+					<div className="row">
+						<div className="col-3">
+							<img src="https://media.api-football.com/leagues/2.png" alt=""/>
+							<br/>
+							View league details 
+						</div>
+						<div className="col-7 offset-1">
+							<FixtureThumb minimal={true} />
+							<FixtureThumb />
+							<FixtureThumb />
+							<FixtureThumb />
+							<FixtureThumb />
+						</div>
+					</div>
+					<div className="row">
+						<div className="col-3">
+							<img src="https://media.api-football.com/leagues/2.png" alt=""/>
+							<br/>
+							View league details 
+						</div>
+						<div className="col-7 offset-1">
+							<FixtureThumb minimal={true} />
+							<FixtureThumb />
+							<FixtureThumb />
+							<FixtureThumb />
+							<FixtureThumb />
 						</div>
 					</div>
 
@@ -85,7 +104,12 @@ export default function Body() {
 							Detalhes Clube
 							<div>
 								<div className="team-fixture">
-									últimas 3 jornadas <br/> + <br/> próximas 3 jornadas
+									<FixtureThumb theme="minimal" />
+									<FixtureThumb theme="minimal" />
+									<FixtureThumb theme="minimal" />
+									<FixtureThumb theme="minimal" />
+									<FixtureThumb theme="minimal" />
+									<FixtureThumb theme="minimal" />
 								</div>
 							</div>
 						</div>
@@ -105,24 +129,25 @@ export default function Body() {
 							<div className="col-9">
 								England
 								<h3>Premier League</h3>
+								<select name="" id="">
+									<option value="">19/20</option>
+									<option value="">18/19</option>
+									<option value="">17/18</option>
+								</select>
 							</div>
 						</div>
 						<table style={{ width: '100%', marginTop: '50px', borderCollapse: 'collapse', textAlign: 'center' }}>
-							<thead style={{ color: '#ddd', fontSize: '13px' }}>
-								<td colSpan="3" style={{ textAlign: 'left' }}>
-									<select name="" id="">
-										<option value="">19/20</option>
-										<option value="">18/19</option>
-										<option value="">17/18</option>
-									</select>
-								</td>
-								<td>P</td>
-								<td>W</td>
-								<td>D</td>
-								<td>L</td>
-								<td>Goals</td>
-								<td>Form</td>
-								<td>Points</td>
+							<thead style={{ color: '#aaa', fontSize: '13px' }}>
+								<tr>
+									<td colSpan="3"></td>
+									<td>P</td>
+									<td>W</td>
+									<td>D</td>
+									<td>L</td>
+									<td>Goals</td>
+									<td>Form</td>
+									<td>Points</td>
+								</tr>
 							</thead>
 							<tbody>
 								<TeamStanding />
@@ -173,7 +198,7 @@ export default function Body() {
 					<hr/>
 					<div className="text-center">
 						{/* GAME EVENTS HERE */}
-						Game events here
+						<EventsTimeline />
 					</div>
 					<hr/>
 					<form>
