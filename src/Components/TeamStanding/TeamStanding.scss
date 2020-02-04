@@ -35,11 +35,11 @@
 }
 
 .team-standing__position__desc--ongreen {
-	background-color: #3aa757;
+	background-color: var(--color-success);
 }
 
 .team-standing__position__desc--onred {
-	background-color: #EA4335;
+	background-color: var(--color-error);
 }
 
 .team-standing__badge {
@@ -79,7 +79,7 @@
 }
 
 .team-standing__form__victory {
-	background-color: #3aa757;
+	background-color: var(--color-success);
 }
 
 .team-standing__form__draw {
@@ -87,7 +87,7 @@
 }
 
 .team-standing__form__lost {
-	background-color: #EA4335;
+	background-color: var(--color-error);
 }
 
 .team-standing__points {
